@@ -1,0 +1,119 @@
+.beersContainer {
+    display: flex;
+    flex-direction: column;
+    width: 665px;
+    margin: 2rem auto 0 auto;
+}
+ 
+.beerContainer {
+     display: flex;
+     flex-direction: row;
+}
+ 
+.beerItem {
+    width: 205px;
+    height: 285px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+#beerImg {
+    border-radius: 10px;
+    opacity: 0.5;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 300ms;
+}
+
+.beerItemInfo {
+     width: 438px;
+     height: 285px;
+     background-color: #F7EDCB;
+     border-radius: 10px;
+     display: inline-block;
+     margin-left: 24px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+     display: flex;
+     flex-direction: row;
+}
+
+#beer1 {
+   visibility: hidden;
+}
+
+#beer2 {
+    visibility: hidden;
+}
+
+#beer3 {
+    visibility: hidden;
+}
+
+#beerImg:hover {
+    opacity: inherit;
+    transform: scale(1.05);
+}
+ 
+.beer-info {
+     margin: 0;
+     padding: 0 0.5rem 0.5rem 0.5rem;
+     text-align: center;
+     font-family: "Inter-Bold", sans-serif;
+}
+ 
+.beer-subheading {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    text-align: center;
+}
+ 
+.hrBeerInfo {
+    height: 240px;
+    border-left: 1px solid rgba(232, 213, 146, 0.684);
+    margin: auto 0;
+}
+ 
+.beerIndex {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 36%;
+}
+ 
+.beerText {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 64%;
+}
+ 
+.beerText p:last-of-type {
+     padding: 1.2rem;
+     margin: 0;
+     padding-top: 0;
+}
+
+.beerText p:first-of-type {
+     padding: 1.2rem;
+     margin: 0;
+     font-size: 1.2rem;
+     font-family: "Inter-Bold", sans-serif;
+}
+
+.hero {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+article {
+    width: 665px;
+    margin: 0 auto 4rem auto;
+}
+
+article h2 {
+    margin: 0;
+}
