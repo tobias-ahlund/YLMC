@@ -1,4 +1,4 @@
-<img src="https://giphy.com/gifs/deschutesbrewery-skipping-deschutes-brewery-whistle-while-you-work-lr1PGJlmI7YMbG7Iwq?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=">
+<img src="https://giphy.com/embed/lr1PGJlmI7YMbG7Iwq" width="480" height="480">
 
 # PHP project
 
