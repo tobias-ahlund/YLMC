@@ -65,13 +65,13 @@ require __DIR__."/functions.php";
                     <div id=<?= $beer["id"]; ?> class="beerItemInfo">
                         <div class="beerIndex">
                             <p class="beer-subheading">Type</p>
-                            <p class="beer-info">IPA</p>
+                            <p class="beer-info"><?= $beer["type"]; ?></p>
                             <p class="beer-subheading">Ingredients</p>
-                            <p class="beer-info">Öl</p>
+                            <p class="beer-info"><?= $beer["ingredients"]; ?></p>
                             <p class="beer-subheading">ABV</p>
-                            <p class="beer-info">10%</p>
+                            <p class="beer-info"><?= $beer["abv"]; ?></p>
                             <p class="beer-subheading">Availability</p>
-                            <p class="beer-info">Limited edition</p>
+                            <p class="beer-info"><?= $beer["availability"]; ?></p>
                         </div>
                         <div class="hrBeerInfo"></div>
                         <div class="beerText">

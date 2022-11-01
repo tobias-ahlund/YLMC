@@ -7,24 +7,36 @@ $beers =
 [
     [
     "img" => "../images/beer1.svg" /* Soda Can Template Vectors by Vecteezy: https://www.vecteezy.com/free-vector/soda-can-template */,
-    "alt" => "image of apa beer",
+    "alt" => "image of ipa beer",
     "jsFunctionEnter" => "jsFunctionEnterBeer1();",
     "jsFunctionLeave" => "jsFunctionLeaveBeer1();",
-    "id" => "beer1"
-    ],
-    [
-    "img" => "../images/beer1.svg",
-    "alt" => "image of ipa beer",
-    "jsFunctionEnter" => "jsFunctionEnterBeer2();",
-    "jsFunctionLeave" => "jsFunctionLeaveBeer2();",
-    "id" => "beer2"
+    "id" => "beer1",
+    "type" => "IPA",
+    "ingredients" => "Barley malt",
+    "abv" => "7.0%",
+    "availability" => "Standard selection"
     ],
     [
     "img" => "../images/beer1.svg",
     "alt" => "image of lager beer",
+    "jsFunctionEnter" => "jsFunctionEnterBeer2();",
+    "jsFunctionLeave" => "jsFunctionLeaveBeer2();",
+    "id" => "beer2",
+    "type" => "Lager",
+    "ingredients" => "Barley malt, hops, wheat",
+    "abv" => "5.0%",
+    "availability" => "Coming soon"
+    ],
+    [
+    "img" => "../images/beer1.svg",
+    "alt" => "image of porter beer",
     "jsFunctionEnter" => "jsFunctionEnterBeer3();",
     "jsFunctionLeave" => "jsFunctionEnterBeer3();",
-    "id" => "beer3"
+    "id" => "beer3",
+    "type" => "Porter",
+    "ingredients" => "Barley malt, oats",
+    "abv" => "5.5%",
+    "availability" => "Limited edition"
     ],
 ];
 
