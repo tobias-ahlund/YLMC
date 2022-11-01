@@ -1,4 +1,4 @@
-<img src="https://giphy.com/embed/lr1PGJlmI7YMbG7Iwq" width="480" height="480">
+<img src="https://media3.giphy.com/media/lr1PGJlmI7YMbG7Iwq/giphy.gif?cid=ecf05e47apfkgt66ltykxdlta5gqlujfq624zenfntyv0vpx&rid=giphy.gif">
 
 # PHP project
 
