@@ -1,0 +1,23 @@
+footer {
+    width: 665px;
+    margin: 3rem auto 3rem auto;
+}
+
+.footer-hr {
+    border: none;
+    margin: 0;
+    height: 1px;
+    background-color: black;
+}
+
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-style: normal; 
+}
+    

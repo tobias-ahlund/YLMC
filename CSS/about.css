@@ -1,1 +1,11 @@
+.aboutUs {
+    text-decoration: underline;
+}
 
+.ourBeers {
+    text-decoration: none;
+}
+
+.ourBeers:hover {
+    text-decoration: underline;
+}
