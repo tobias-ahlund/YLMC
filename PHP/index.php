@@ -34,9 +34,9 @@ require __DIR__."/functions.php";
 
                 <!-- Social media links -->
                 <div class="socialContainer">
-                    <img class="socialItem" src="../images/fb-logo.png" alt="facebook logo">
-                    <img class="socialItem" src="../images/twitter-logo.svg" alt="twitter logo">
-                    <img class="socialItem" src="../images/instagram-logo.svg" alt="instagram logo">
+                    <a href="#0"><img class="socialItem" src="../images/fb-logo.png" alt="facebook logo"></a>
+                    <a href="#0"><img class="socialItem" src="../images/twitter-logo.svg" alt="twitter logo"></a>
+                    <a href="#0"><img class="socialItem" src="../images/instagram-logo.svg" alt="instagram logo"></a>
                 </div>
             </div>
 
