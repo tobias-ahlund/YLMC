@@ -26,8 +26,8 @@ Code review written by Emma Eklund.
 
 Tested by the following people:
 
-1.
-2.
+1. Anna Brumark
+2. Gustav Enoksson
 
 # License
 
