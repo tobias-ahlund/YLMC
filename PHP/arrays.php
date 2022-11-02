@@ -6,7 +6,7 @@ declare(strict_types=1);
 $beers = 
 [
     [
-    "img" => "../images/beer1.svg" /* Soda Can Template Vectors by Vecteezy: https://www.vecteezy.com/free-vector/soda-can-template */,
+    "img" => "../images/ipa.svg" /* Soda Can Template Vectors by Vecteezy: https://www.vecteezy.com/free-vector/soda-can-template */,
     "alt" => "image of ipa beer",
     "jsFunctionEnter" => "jsFunctionEnterBeer1();",
     "jsFunctionLeave" => "jsFunctionLeaveBeer1();",
@@ -17,7 +17,7 @@ $beers =
     "availability" => "Standard selection"
     ],
     [
-    "img" => "../images/beer1.svg",
+    "img" => "../images/lager.svg",
     "alt" => "image of lager beer",
     "jsFunctionEnter" => "jsFunctionEnterBeer2();",
     "jsFunctionLeave" => "jsFunctionLeaveBeer2();",
@@ -28,7 +28,7 @@ $beers =
     "availability" => "Coming soon"
     ],
     [
-    "img" => "../images/beer1.svg",
+    "img" => "../images/porter.svg",
     "alt" => "image of porter beer",
     "jsFunctionEnter" => "jsFunctionEnterBeer3();",
     "jsFunctionLeave" => "jsFunctionEnterBeer3();",
