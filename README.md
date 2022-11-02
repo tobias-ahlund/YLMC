@@ -9,8 +9,8 @@ A website for a fictional brewery.
 # Installation
 
 1. Get the repo
-2. Start a local server (may I suggest localhost:7000?)
-3. Go to http://localhost:7000/php/index.php 
+2. Start a local server (may I suggest localhost:7500?)
+3. Go to http://localhost:7500/PHP/index.php
 
 # Code review
 
