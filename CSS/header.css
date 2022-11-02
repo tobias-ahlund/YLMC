@@ -23,10 +23,13 @@ h1 {
     align-items: flex-end;
 }
 
+.socialContainer a {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
 .socialItem {
     width: 26px;
     height: 26px;
-    margin: 0 0.5rem 0 0.5rem;
 }
 
 .hr-header {
@@ -35,4 +38,11 @@ h1 {
     height: 1px;
     background-color: black;
     margin: 0.5rem 0 0 0;
+}
+
+/* Layout for smaller screens */
+@media (max-width: 700px) {
+    header, .beersContainer {
+        width: 80%;
+    }
 }

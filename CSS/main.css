@@ -32,7 +32,6 @@
      border-radius: 10px;
      display: inline-block;
      margin-left: 24px;
-     margin-bottom: 24px;
      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
      display: flex;
      flex-direction: row;
@@ -52,13 +51,14 @@
 
 #beerImg:hover {
     opacity: inherit;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
  
 .beer-info {
      margin: 0;
      padding: 0 0.5rem 0.5rem 0.5rem;
      text-align: center;
+     font-family: "Inter-Bold", sans-serif;
 }
  
 .beer-subheading {
@@ -70,7 +70,7 @@
  
 .hrBeerInfo {
     height: 240px;
-    border-left: 1px solid black;
+    border-left: 1px solid rgba(232, 213, 146, 0.684);
     margin: auto 0;
 }
  
@@ -78,27 +78,27 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
-     width: 40%;
+     width: 36%;
 }
  
 .beerText {
      display: flex;
      flex-direction: column;
      justify-content: center;
+     width: 64%;
 }
  
-.beerText p {
-     padding: 1rem;
+.beerText p:last-of-type {
+     padding: 1.2rem;
      margin: 0;
+     padding-top: 0;
 }
 
-/* obs funkar ej */
-.beerText + p {
-     padding: 1rem;
+.beerText p:first-of-type {
+     padding: 1.2rem;
      margin: 0;
-     font-weight: bold;
-     font-size: 3rem;
-     font-size: 5rem;
+     font-size: 1.2rem;
+     font-family: "Inter-Bold", sans-serif;
 }
 
 .hero {
@@ -116,4 +116,20 @@ article {
 
 article h2 {
     margin: 0;
+}
+
+/* Layout for smaller screens */
+@media (max-width: 700px) {
+    .beersContainer, article, .hero {
+        width: 80%;
+        padding: 0;
+    }
+    .beer-subheading, .beer-info, .beerText p {
+        font-size: 0.5rem;
+        
+    }
+    .beerText p:first-of-type {
+        font-size: 0.8rem;
+        
+    }
 }

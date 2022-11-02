@@ -21,3 +21,10 @@ a {
 .aboutUs:hover {
     text-decoration: underline;
 }
+
+/* Layout for smaller screens */
+@media (max-width: 700px) {
+    nav {
+        width: 80%;
+    }
+}
