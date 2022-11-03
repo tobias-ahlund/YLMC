@@ -11,7 +11,7 @@
 }
  
 .beerItem {
-    width: 205px;
+    width: 205px; 
     height: 285px;
     border-radius: 10px;
     margin-bottom: 24px;
@@ -121,15 +121,37 @@ article h2 {
 /* Layout for smaller screens */
 @media (max-width: 700px) {
     .beersContainer, article, .hero {
-        width: 80%;
+        width: 90%;
         padding: 0;
     }
     .beer-subheading, .beer-info, .beerText p {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         
     }
     .beerText p:first-of-type {
         font-size: 0.8rem;
-        
+        padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    }
+
+    .beerText p:last-of-type {
+        font-size: 0.55rem;
+        padding: 0 0.6rem 0.6rem 0.6rem;    
+    }
+
+    .beer-info {
+        padding: 0 0.4rem 0 0.4rem;
+    }
+
+    .beerItem, .beerItem img {
+        width: calc(205px * 0.7);
+        height: calc(285px * 0.7);
+    }
+
+    .beerItemInfo {
+        width: calc(438px * 0.7);
+        height: calc(285px * 0.7);
+    }
+    .hrBeerInfo {
+        height: calc(240px * 0.7);
     }
 }
