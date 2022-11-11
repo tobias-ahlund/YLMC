@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 // Returns the company logo
 function getLogo() {
-    $logoReversed = "gvs.ogol/segami/";
+    $logoReversed = "gvs.ogol/segami";
     
     $logo = strrev($logoReversed);
     

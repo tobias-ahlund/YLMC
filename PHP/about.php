@@ -28,8 +28,7 @@ require __DIR__ . "/functions.php";
             <h1><?= $topLevelHeading; ?></h1>
 
             <div class="logo-social-wrapper">
-                <!-- Logo -->
-                <a class="logo" href="../index.php"><img src=<?= $logo; ?> alt="company logo"></a>
+                <a class="logo" href="../index.php"><img src="../images/logo.svg" alt="company logo"></a>
                 <!-- Social media links -->
                 <div class="socialContainer">
                     <a href="#0"><img class="socialItem" src="../images/fb-logo.png" alt="facebook logo"></a>

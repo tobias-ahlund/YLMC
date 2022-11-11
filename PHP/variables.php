@@ -8,10 +8,7 @@ $lang = "en";
 
 $title = "YLMC - Your Local Microbrewing Company";
 
-$heading1 = "Your Local Microbrewing Company";
-
-$logo = "../images/logo.svg";
-
+$topLevelHeading = "Your Local Microbrewing Company";
 
 // Checks the time. Returns "open" if business hours, else "closed"
 $timeCheck = date("H:i");
