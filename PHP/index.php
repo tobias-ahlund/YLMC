@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+session_start();
+
 require __DIR__."/variables.php";
 require __DIR__."/arrays.php";
 require __DIR__."/functions.php";
@@ -22,16 +24,53 @@ require __DIR__."/functions.php";
         <title><?=$title?></title>
     </head>
     <body>
+       
+   
+        
+        <!-- test -->
+    <?php if (isset($_SESSION["confirmed"]) === false) { ?>
+    <form method="post" class=" <?= hideForm(); ?> ">
+        <p>This website contains information about alcohol. To continue you need to confirm that you are least 20 years old.</p>
+        <input type="submit" name="button-confirm" value="Confirm">
+    </form>
+    
+    <div class=" <?= overlay(); ?> ">
 
-        <!-- Header -->
+    <?php }
+  
+    
+    
+    if (isset($_POST["button-confirm"])) {
+        overlay();
+        hideForm();
+    }
+
+    function overlay() {
+        if (isset($_POST["button-confirm"])) {
+            $hideOverlay = "";
+            echo $hideOverlay;
+        } else {
+            $overlay = "overlay";
+            echo $overlay;
+        }
+    } 
+
+    function hideForm() {
+        if (isset($_POST["button-confirm"])) {
+            $hideForm = "form-inactive";
+            $_SESSION["confirmed"] = true;
+            return $hideForm;
+        }
+    }
+
+    ?>
+<!-- slut test -->
         <header>
-            <!-- Small heading -->
-            <h1><?= $heading1; ?></h1>
+            <h1><?= $topLevelHeading; ?></h1>
 
             <div class="logo-social-wrapper">
                 <!-- Logo -->
                 <a class="logo" href="index.php"><img src=<?= $logo; ?> alt="company logo"></a>
-
                 <!-- Social media links -->
                 <div class="socialContainer">
                     <a href="#0"><img class="socialItem" src="../images/fb-logo.png" alt="facebook logo"></a>
@@ -39,29 +78,23 @@ require __DIR__."/functions.php";
                     <a href="#0"><img class="socialItem" src="../images/instagram-logo.svg" alt="instagram logo"></a>
                 </div>
             </div>
-
-            <!-- Horizontal line -->
             <hr class="hr-header">
         </header>
-
-        <!-- Navigation -->
         <nav>
             <!-- Menu -->
             <a class ="ourBeers" href="index.php">Our beers</a>
             <a class="aboutUs" href="about.php">About us</a>
         </nav>
-
-        <!-- Main -->
         <main> 
             <!-- Beer content -->
             <div class=beersContainer>     
                 <?php foreach ($beers as $beer): ?>
                     <div class="beerContainer">
-                    <a href="#0" onmouseenter=<?= $beer["jsFunctionEnter"]; ?> onmouseleave=<?= $beer["jsFunctionLeave"]; ?>>
-                        <div class="beerItem">
-                            <img id="beerImg" src=<?= $beer["img"]; ?> alt=<?= $beer["alt"]; ?>>
-                        </div>
-                    </a>
+                        <a href="#0" onmouseenter=<?= $beer["jsFunctionEnter"]; ?> onmouseleave=<?= $beer["jsFunctionLeave"]; ?>>
+                            <div class="beerItem">
+                                <img id="beerImg" src=<?= $beer["img"]; ?> alt=<?= $beer["alt"]; ?>>
+                            </div>
+                        </a>
                     <div id=<?= $beer["id"]; ?> class="beerItemInfo">
                         <div class="beerIndex">
                             <p class="beer-subheading">Type</p>
@@ -83,10 +116,7 @@ require __DIR__."/functions.php";
                 <?php endforeach; ?> 
             </div>
             <!-- End of beer content -->
-
         </main>
-
-        <!-- Footer -->
         <footer>
             <hr class="footer-hr">
             <address>
@@ -95,8 +125,9 @@ require __DIR__."/functions.php";
                 <p class="footer-text">417 05 Göteborg</p>
             </address>
         </footer>
-
-        <!-- Link to Javascript file -->
+        <!-- test -->
+ </div>
+ <!-- slut test -->
         <script src="../functions.js"></script>
     </body>
 </html>
