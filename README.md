@@ -4,7 +4,7 @@
 
 A website for a fictional brewery.
 
-**[Go to website.](https://tobias-ahlund.com/project/PHP/)**
+**[Go to website.](https://tobias-ahlund.com/project/index.php)**
 
 # Installation
 
