@@ -13,11 +13,11 @@ require __DIR__."/PHP/functions.php";
 <!DOCTYPE html>
 <html lang=<?= $lang; ?>>
     <head>
-        <link rel="stylesheet" href="../CSS/style.css">
-        <link rel="stylesheet" href="../CSS/header.css">
-        <link rel="stylesheet" href="../CSS/nav.css">
-        <link rel="stylesheet" href="../CSS/main.css">
-        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/nav.css">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/footer.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,12 +45,12 @@ require __DIR__."/PHP/functions.php";
 
             <div class="logo-social-wrapper">
                 <!-- Logo -->
-                <a class="logo" href="index.php"><img src=<?= $logo; ?> alt="company logo"></a>
+                <a class="logo" href="index.php"><img src="images/logo.svg" alt="company logo"></a>
                 <!-- Social media links -->
                 <div class="socialContainer">
-                    <a href="#0"><img class="socialItem" src="../images/fb-logo.png" alt="facebook logo"></a>
-                    <a href="#0"><img class="socialItem" src="../images/twitter-logo.svg" alt="twitter logo"></a>
-                    <a href="#0"><img class="socialItem" src="../images/instagram-logo.svg" alt="instagram logo"></a>
+                    <a href="#0"><img class="socialItem" src="images/fb-logo.png" alt="facebook logo"></a>
+                    <a href="#0"><img class="socialItem" src="images/twitter-logo.svg" alt="twitter logo"></a>
+                    <a href="#0"><img class="socialItem" src="images/instagram-logo.svg" alt="instagram logo"></a>
                 </div>
             </div>
             <hr class="hr-header">
@@ -58,7 +58,8 @@ require __DIR__."/PHP/functions.php";
         <nav>
             <!-- Menu -->
             <a class ="ourBeers" href="index.php">Our beers</a>
-            <a class="aboutUs" href="/PHP/about.php">About us</a>
+           <!--<a class="aboutUs" href="/PHP/about.php">About us</a>-->
+            <a class="aboutUs" href="PHP/about.php">About us</a>
         </nav>
         <main> 
             <!-- Beer content -->
