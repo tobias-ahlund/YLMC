@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 // Returns the company logo
 function getLogo() {
-    $logo = "/images/logo.svg";
+    $logoReversed = "gvs.ogol/segami/";
+    
+    $logo = strrev($logoReversed);
     
     return $logo;
 }
@@ -21,4 +23,23 @@ function getRandomHero() {
     $hero = $heroImages[$getRandomHero];
     
     return $hero;
+}
+
+// If the user clicks the "Confirm" button the confirm age window will disappear
+function overlay() {
+    if (isset($_POST["button-confirm"])) {
+        $hideOverlay = "";
+        echo $hideOverlay;
+    } else {
+        $overlay = "overlay";
+        echo $overlay;
+    }
+} 
+
+function hideForm() {
+    if (isset($_POST["button-confirm"])) {
+        $hideForm = "form-inactive";
+        $_SESSION["confirmed"] = true;
+        return $hideForm;
+    }
 }

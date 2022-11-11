@@ -25,46 +25,21 @@ require __DIR__."/functions.php";
     </head>
     <body>
        
-   
-        
-        <!-- test -->
-    <?php if (isset($_SESSION["confirmed"]) === false) { ?>
-    <form method="post" class=" <?= hideForm(); ?> ">
-        <p>This website contains information about alcohol. To continue you need to confirm that you are least 20 years old.</p>
-        <input type="submit" name="button-confirm" value="Confirm">
-    </form>
-    
-    <div class=" <?= overlay(); ?> ">
+        <!-- Confirm age window -->
+        <?php if (isset($_SESSION["confirmed"]) === false) { ?>
+            <form method="post" class=" <?= hideForm(); ?> ">
+                <p>This website contains information about alcohol. To continue you need to confirm that you are at least 20 years old.</p>
+                <input type="submit" name="button-confirm" value="Confirm">
+            </form>
+            <div class=" <?= overlay(); ?> "> <?php
+        } 
 
-    <?php }
-  
-    
-    
-    if (isset($_POST["button-confirm"])) {
-        overlay();
-        hideForm();
-    }
-
-    function overlay() {
         if (isset($_POST["button-confirm"])) {
-            $hideOverlay = "";
-            echo $hideOverlay;
-        } else {
-            $overlay = "overlay";
-            echo $overlay;
-        }
-    } 
+            overlay();
+            hideForm();
+        } ?>
+        <!-- End confirm age window -->
 
-    function hideForm() {
-        if (isset($_POST["button-confirm"])) {
-            $hideForm = "form-inactive";
-            $_SESSION["confirmed"] = true;
-            return $hideForm;
-        }
-    }
-
-    ?>
-<!-- slut test -->
         <header>
             <h1><?= $topLevelHeading; ?></h1>
 
@@ -125,9 +100,7 @@ require __DIR__."/functions.php";
                 <p class="footer-text">417 05 Göteborg</p>
             </address>
         </footer>
-        <!-- test -->
  </div>
- <!-- slut test -->
         <script src="../functions.js"></script>
     </body>
 </html>
