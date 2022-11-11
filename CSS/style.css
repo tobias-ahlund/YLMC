@@ -7,10 +7,10 @@
     src: url(../fonts/Inter-Regular.woff);
   }
   
-  @font-face {
+@font-face {
     font-family: Inter-Bold;
     src: url(../fonts/Inter-Bold.woff);
-  }
+}
   
 
 body {
@@ -85,7 +85,6 @@ input[type="submit"] {
     line-height: 1rem;
 }
 
-/* Layout for smaller screens */
 @media (max-width: 1065px) {
     form {
         width: 50%;
