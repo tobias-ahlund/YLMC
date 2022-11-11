@@ -28,4 +28,62 @@ p {
     font-size: 1rem;
 }
 
+/* Confirm age window */
+.overlay {
+    background-color: rgba(229,229,229);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    opacity: 0.1;
+    z-index: -1;
+}
 
+form {
+    margin: auto;
+    margin-top: 10rem;
+    z-index: 100;
+    opacity: 1;
+    background-color: rgb(242, 242, 242);
+    width: 500px;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+}
+
+.form-inactive {
+    display: none;
+}
+
+form p {
+    text-align: left;
+}
+
+input[type="submit"] {
+	border: none;
+	font: inherit;
+	outline: inherit;
+    background-color: rgba(0, 163, 255);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    width: 50%;
+    cursor: pointer;
+    color: white;
+    line-height: 1rem;
+}
+
+/* Layout for smaller screens */
+@media (max-width: 1065px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    form {
+        width: 75%;
+    }
+}
