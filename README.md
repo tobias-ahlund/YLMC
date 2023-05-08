@@ -2,15 +2,15 @@
 
 # Brewery website
 
-A website for a fictional brewery.
+A website for the made-up brewery YLMC (Your Local Microbrewing Company).
 
 **[Go to website.](https://tobias-ahlund.com/project/index.php)**
 
 # Installation
 
 1. Get the repo
-2. Start a local server (may I suggest localhost:7500?)
-3. Go to http://localhost:7500/PHP/index.php
+2. Start a local server (may I suggest localhost:3000?)
+3. Go to http://localhost:3000/PHP/index.php
 
 # Code review
 
